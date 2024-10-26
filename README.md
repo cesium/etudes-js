@@ -1,6 +1,6 @@
-# etunes-JS
+# etudes-JS
 
-Welcome to the **etunes-JS** Collection! This repository contains a comprehensive list of exercises designed to help you master **JavaScript** and **TypeScript**. With progressively challenging exercises, these will guide you through essential and advanced features of both programming languages. Whether you're a beginner or an experienced developer, this collection will strengthen your skills in JS and TS.
+Welcome to the **etudes-JS** Collection! This repository contains a comprehensive list of exercises designed to help you master **JavaScript** and **TypeScript**. With progressively challenging exercises, these will guide you through essential and advanced features of both programming languages. Whether you're a beginner or an experienced developer, this collection will strengthen your skills in JS and TS.
 
 ## Introduction
 
