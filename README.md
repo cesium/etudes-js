@@ -1,8 +1,8 @@
-# etudes-JS
+# 📙 JavaScript/TypeScript Études
 
-Welcome to the **etudes-JS** Collection! This repository contains a comprehensive list of exercises designed to help you master **JavaScript** and **TypeScript**. With progressively challenging exercises, these will guide you through essential and advanced features of both programming languages. Whether you're a beginner or an experienced developer, this collection will strengthen your skills in JS and TS.
+Welcome to the **JavaScript/TypeScript Études** Collection! This repository contains a comprehensive list of exercises designed to help you master **JavaScript** and **TypeScript**. With progressively challenging exercises, these will guide you through essential and advanced features of both programming languages. Whether you're a beginner or an experienced developer, this collection will strengthen your skills in JS and TS.
 
-## Introduction
+## 👀 Introduction
 
 JavaScript is a versatile, dynamic language used widely for web development, while TypeScript is a statically typed superset of JavaScript that offers enhanced tooling and error-checking features. These exercises provide a practical, hands-on approach to learning both languages, covering:
 
@@ -12,15 +12,15 @@ JavaScript is a versatile, dynamic language used widely for web development, whi
 - Error handling and debugging
 - TypeScript types and interfaces
 
-## Getting Started
+## 🚀 Getting Started
 
 To get started with these exercises, you'll need to have **Node.js** and **TypeScript** installed on your system.
 
 Once the tools are installed, you can clone this repository and start exploring the exercises:
 
 ```bash
-git clone https://github.com/seu-usuario/etunes-JS.git
-cd etunes-JS
+git clone https://github.com/seu-usuario/etudes-js.git
+cd etudes-js
 ```
 
 For JavaScript exercises:
