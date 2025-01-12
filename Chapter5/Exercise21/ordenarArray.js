@@ -1,5 +1,18 @@
 // Implementa uma função para ordenar um array de números em ordem crescente.
+// Implementação do bubbleSort (complexidade O(n^2), horrível xD)
 
-function ordenarArray(nums) {}
+function ordenarArray(nums) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = 0; j < nums.length - i - 1; j++) {
+      if (nums[j] > nums[j + 1]) {
+        let temp = nums[j];
+        nums[j] = nums[j + 1];
+        nums[j + 1] = temp;
+      }
+    }
+  }
 
-console.log(ordenarArray([4, 2, 7, 1, 9])); //output: [1, 2, 4, 7, 9]
+  return nums;
+}
+
+console.log(ordenarArray([4, 2, 7, 1, 9])); // output: [1, 2, 4, 7, 9]
