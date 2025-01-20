@@ -1,27 +1,22 @@
 // Dadas duas strings, verifica se uma é o anagrama da outra (ou seja, se contêm os mesmos caracteres, com a mesma frequência, mas em qualquer ordem).
 
 function eAnagrama(str1, str2) {
-  if (str1.length !== str2.length) return false;
-
-  let contador1 = {};
-  let contador2 = {};
-
-  for (let i = 0; i < str1.length; i++) {
-    let char1 = str1[i];
-    let char2 = str2[i];
-
-    contador1[char1] = (contador1[char1] || 0) + 1;
-    contador2[char2] = (contador2[char2] || 0) + 1;
-  }
-
-  for (let key in contador1) {
-    if (contador1[key] !== contador2[key]) {
-      return false;
+  str1 = [...str1]; 
+  str2 = [...str2];
+  for( let i = 0; i< str1.length; i++) { 
+    for (let j = 0; j< str2.length;j++) { 
+      if (str1[i]=== str2[j]) { 
+        str1.splice(i,1);
+        str2.splice(j,1);
+        i--; 
+      }
     }
   }
-
-  return true;
+  if (str1.length === 0 && str2.length === 0) { 
+    return true ;
+  } return false;
 }
 
 console.log(eAnagrama("listen", "silent")); //output: true
-console.log(eAnagrama("hello", "bello")); //output: false
+console.log(eAnagrama("tello", "lelto")); //output: false
+
