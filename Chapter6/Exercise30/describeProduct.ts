@@ -1,11 +1,30 @@
 // Define a type alias for a Product and create a function that describes the product.
 
 type Product = {
-  // Your implementation here
+  name: string;
+  available?: boolean;
+  price?: number;
 };
 
 function describeProduct(product: Product): string {
-  // Your implementation here
+  let result = `${product.name} `;
+
+  if (product.available === false || product.available === undefined) {
+    if (product.price === undefined) {
+      return result += "is not available";
+    }
+    else return result += `costs $${product.price}`;
+  }
+
+  if (product.available) {
+    result += "is available";
+  }
+
+  if (product.price !== undefined) {
+    result += `\n${product.name} costs $${product.price}`;
+  }
+
+  return result;
 }
 
 console.log(describeProduct({ name: "Laptop", price: 999 })); // Output: "Laptop costs $999"
