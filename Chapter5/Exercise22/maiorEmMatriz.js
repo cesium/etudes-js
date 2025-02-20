@@ -1,6 +1,17 @@
 // Dada uma matriz (array de arrays) de números inteiros, encontra o maior número presente em qualquer das sublistas.
 
-function maiorEmMatriz(matriz) {}
+function maiorEmMatriz(matriz) {
+  let max = matriz[0][0];
+
+  for(var arr of matriz){
+    for (var el of arr){
+      if (el>max){
+        max = el;
+      }
+    }
+  }
+  return max;
+}
 
 console.log(
   maiorEmMatriz([
