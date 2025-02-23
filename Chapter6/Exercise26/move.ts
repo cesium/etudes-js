@@ -1,10 +1,14 @@
 // Define an enum for Directions and a function that performs an action based on the direction.
 
-enum Direction {}
-// Your implementation here
+enum Direction {
+  Up = 'up', 
+  Down = 'down', 
+  Right = 'right', 
+  Left = 'left'
+}
 
 function move(direction: Direction): void {
-  // Your implementation here
+  console.log("Moving " + direction);
 }
 
 move(Direction.Up); // Output: "Moving up"

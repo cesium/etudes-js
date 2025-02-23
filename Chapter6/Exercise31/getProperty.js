@@ -1,9 +1,7 @@
 // Define a function that takes an object and a key, returning the value of that key.
-
-function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+function getProperty(obj, key) {
     return obj[key];
 }
-
-const car = { make: "Toyota", model: "Corolla", year: 2020 };
+var car = { make: "Toyota", model: "Corolla", year: 2020 };
 console.log(getProperty(car, "make")); // Output: "Toyota"
 console.log(getProperty(car, "year")); // Output: 2020
